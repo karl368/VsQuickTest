@@ -10,6 +10,7 @@ namespace VsQuickTest
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello, c#!");
         }
     }
 }
