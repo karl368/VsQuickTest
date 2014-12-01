@@ -8,14 +8,20 @@ namespace VsQuickTest
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
-            Console.WriteLine("Hello, c#!");
             helloWord();
             testLinqStatement();
+            pause();
+        }
+
+        private static void pause()
+        {
+            Console.ReadLine();
         }
         
-        private static void helloWord() {
+        private static void helloWord() 
+        {
             System.Console.WriteLine("Hello, C#!");
         }
 

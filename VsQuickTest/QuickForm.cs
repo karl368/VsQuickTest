@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VsQuickTest
 {
-    public partial class MainForm : Form
+    public partial class QuickForm : Form
     {
-        public MainForm()
+        public QuickForm()
         {
             InitializeComponent();
         }
