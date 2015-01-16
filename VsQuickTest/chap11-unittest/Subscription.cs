@@ -27,7 +27,7 @@ namespace VsQuickTest.chap11_unittest.main
             get
             {
                 // TODO: will remove this later 2
-                System.Console.Write("begin get current status now...");
+                System.Console.Write("begin get current status now... ");
                 if (this.PaidUpTo.HasValue == false)
                     return Status.Temporary;
                 if (this.PaidUpTo > DateTime.Today)
