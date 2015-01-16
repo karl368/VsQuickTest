@@ -8,6 +8,7 @@ namespace VsQuickTestTest.chap11_unittest.test
     public class SubscriptionTest
     {
         [TestMethod]
+        [TestCategory("Financial")]
         public void CurrentStatus_NullPaidUpToDate_TemporaryStatus()
         {
             Subscription s = new Subscription();
@@ -16,6 +17,11 @@ namespace VsQuickTestTest.chap11_unittest.test
             Subscription.Status actual = s.CurrentStatus;
             Assert.AreEqual(Subscription.Status.Temporary, actual, "Subscription status was not set correctly. ");
 
+            // this case not yet completed
+            Assert.Inconclusive();
+
         }
+
+
     }
 }

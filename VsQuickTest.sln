@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsQuickTest", "VsQuickTest\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsQuickTestTest", "VsQuickTestTest\VsQuickTestTest.csproj", "{EB644F7E-B4D3-4F50-BFCD-D9D7BB8EA0AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsQuickTest-Nunit", "VsQuickTest-Nunit\VsQuickTest-Nunit.csproj", "{F93B5DC0-B358-4879-8B4F-16C3263986AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EB644F7E-B4D3-4F50-BFCD-D9D7BB8EA0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB644F7E-B4D3-4F50-BFCD-D9D7BB8EA0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB644F7E-B4D3-4F50-BFCD-D9D7BB8EA0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93B5DC0-B358-4879-8B4F-16C3263986AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93B5DC0-B358-4879-8B4F-16C3263986AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93B5DC0-B358-4879-8B4F-16C3263986AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93B5DC0-B358-4879-8B4F-16C3263986AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

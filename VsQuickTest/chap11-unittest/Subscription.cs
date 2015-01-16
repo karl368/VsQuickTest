@@ -19,10 +19,15 @@ namespace VsQuickTest.chap11_unittest.main
         // take care that ? after the type means the field could be null - without any value
         public DateTime? PaidUpTo { get; set; }
 
+        /// <summary>
+        /// This method <c>CurrentStatus</c> will be tested by embedded .net and nunit test frameworks
+        /// </summary>
         public Status CurrentStatus
         {
             get
             {
+                // TODO: will remove this later 2
+                System.Console.Write("begin get current status now...");
                 if (this.PaidUpTo.HasValue == false)
                     return Status.Temporary;
                 if (this.PaidUpTo > DateTime.Today)

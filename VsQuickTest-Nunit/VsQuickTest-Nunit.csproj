@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{33EEFAE8-FF2D-4A40-B61A-AED948E3B4CA}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{F93B5DC0-B358-4879-8B4F-16C3263986AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VsQuickTest</RootNamespace>
-    <AssemblyName>VsQuickTest</AssemblyName>
+    <RootNamespace>VsQuickTest_Nunit</RootNamespace>
+    <AssemblyName>VsQuickTest-Nunit</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -21,10 +20,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\VsQuickTest.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,10 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,33 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="chap10-diagrams\manualDiagram\Car.cs" />
-    <Compile Include="chap10-diagrams\manualDiagram\Driver.cs" />
-    <Compile Include="chap11-unittest\Subscription.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="nunittest-fromweb\SubscriptionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuickForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuickForm.Designer.cs">
-      <DependentUpon>QuickForm.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="chap10-diagrams\manualDiagram\QuickDiagram.cd" />
-    <None Include="chap10-diagrams\QuickForm.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="chap10-diagrams\manualDiagram\readme.txt" />
-    <Content Include="readme.txt" />
+    <ProjectReference Include="..\VsQuickTest\VsQuickTest.csproj">
+      <Project>{33eefae8-ff2d-4a40-b61a-aed948e3b4ca}</Project>
+      <Name>VsQuickTest</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="QuickForm.resx">
-      <DependentUpon>QuickForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
