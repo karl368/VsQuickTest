@@ -1,0 +1,19 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".txt" #>
+Financial Sample Data
+<# for( int i = -5; i <= 5; i++ )
+{
+	WriteFinancialNumber(i);
+	WriteLine( "" );
+} #>
+End of Sample Data
+
+<#+
+void WriteFinancialNumber(decimal amount)
+{
+	if( amount < 0 )
+		Write("(${0:#0.00})", System.Math.Abs(amount) );
+	else
+		Write("${0:#0.00}", amount);
+}
+#>

@@ -1,0 +1,18 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".txt" #>
+<#
+for( int i = 99; i > 1; i-- )
+{
+	WriteLine( "{0} Bottles of Non-alcoholic Carbonated Beverage on the wall", i);
+	WriteLine( "{0} Bottles of Non-alcoholic Carbonated Beverage", i );
+	WriteLine( "Take one down" );
+	WriteLine( "And pass it around" );
+	if( i - 1 == 0 ) {
+		WriteLine(
+		"There's no Bottles of Non-alcoholic Carbonated Beverage on the wall." );
+	} else {
+		WriteLine(
+		"There's {0} Bottles of Non-alcoholic Carbonated Beverage on the wall.",i-1);
+	}
+	WriteLine( "" );
+} #>

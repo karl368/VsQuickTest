@@ -1,0 +1,14 @@
+﻿<#@ template debug="true" hostspecific="false" language="C#" #>
+<#@ output extension=".txt" #>
+<# for( int i = 99; i >= 1; i-- )
+{ #>
+<#=i #> Bottles of Non-alcoholic Carbonated Beverage on the wall
+<#=i #> Bottles of Non-alcoholic Carbonated Beverage
+Take one down
+And pass it around
+<# if( i-1 == 0 ) { #>
+There's no Bottles of Non-alcoholic Carbonated Beverage on the wall
+<# } else { #>
+There's <#=i-1 #> Bottles of Non-alcoholic Carbonated Beverage on the wall
+<# } #>
+<# } #>
