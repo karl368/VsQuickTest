@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VsQuickTest.chap28_dataset;
 
 namespace VsQuickTest
 {
@@ -49,6 +50,11 @@ namespace VsQuickTest
         private void button2_Click_1(object sender, EventArgs e)
         {
             testLinqStatement();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new CasesWindow().ShowDialog();
         }
 
         
