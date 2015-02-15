@@ -19,5 +19,6 @@ namespace VsQuickTest
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new QuickForm());
         }
+        
     }
 }
