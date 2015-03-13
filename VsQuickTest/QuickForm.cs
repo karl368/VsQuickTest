@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VsQuickTest.basic.function;
 using VsQuickTest.chap28_dataset;
 
 namespace VsQuickTest
@@ -55,6 +56,11 @@ namespace VsQuickTest
         private void button3_Click(object sender, EventArgs e)
         {
             new CasesWindow().ShowDialog();
+        }
+
+        private void defineAndCallFunc_Click(object sender, EventArgs e)
+        {
+            new HandleMessage("where?").Handle();
         }
 
         
