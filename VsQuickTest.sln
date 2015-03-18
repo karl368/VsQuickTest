@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsQuickTestTest", "VsQuickT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsQuickTest-Nunit", "VsQuickTest-Nunit\VsQuickTest-Nunit.csproj", "{F93B5DC0-B358-4879-8B4F-16C3263986AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormQuickTest", "WindowsFormQuickTest\WindowsFormQuickTest.csproj", "{B7FFCF22-8633-40CF-83F7-3307CE5B63A3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationQuick", "WebApplicationQuick\WebApplicationQuick.csproj", "{CB62FD61-7DD9-4642-9A4F-889149A80B39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementDetector", "ElementDetector\ElementDetector.csproj", "{82B85105-44AC-46E2-9270-A70B16FA7FCA}"
@@ -33,10 +31,6 @@ Global
 		{F93B5DC0-B358-4879-8B4F-16C3263986AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F93B5DC0-B358-4879-8B4F-16C3263986AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F93B5DC0-B358-4879-8B4F-16C3263986AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7FFCF22-8633-40CF-83F7-3307CE5B63A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7FFCF22-8633-40CF-83F7-3307CE5B63A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7FFCF22-8633-40CF-83F7-3307CE5B63A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7FFCF22-8633-40CF-83F7-3307CE5B63A3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CB62FD61-7DD9-4642-9A4F-889149A80B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CB62FD61-7DD9-4642-9A4F-889149A80B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB62FD61-7DD9-4642-9A4F-889149A80B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
