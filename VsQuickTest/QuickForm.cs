@@ -63,6 +63,11 @@ namespace VsQuickTest
             new HandleMessage("where?").Handle();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }
