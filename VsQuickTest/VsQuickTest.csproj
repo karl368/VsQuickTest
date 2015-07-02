@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="basic\function\HandleMessage.cs" />
+    <Compile Include="basic\web\WebClientUtil.cs" />
     <Compile Include="chap10-diagrams\manualDiagram\Car.cs" />
     <Compile Include="chap10-diagrams\manualDiagram\Driver.cs" />
     <Compile Include="chap11-unittest\Subscription.cs" />

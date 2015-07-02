@@ -81,7 +81,7 @@
             this.xmlToSql.Name = "xmlToSql";
             this.xmlToSql.Size = new System.Drawing.Size(128, 28);
             this.xmlToSql.TabIndex = 4;
-            this.xmlToSql.Text = "XML to SQL";
+            this.xmlToSql.Text = "WebClient Usage";
             this.xmlToSql.UseVisualStyleBackColor = true;
             this.xmlToSql.Click += new System.EventHandler(this.button4_Click);
             // 
