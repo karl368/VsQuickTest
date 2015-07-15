@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationQuick", "WebA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementDetector", "ElementDetector\ElementDetector.csproj", "{82B85105-44AC-46E2-9270-A70B16FA7FCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AUT", "AUT\AUT.csproj", "{AE72CC48-12D8-49C7-AFB4-AE11DEB5FD30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutTest", "AutTest\AutTest.csproj", "{B2177A46-332F-49C0-8C92-DE2B2AB0C396}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{82B85105-44AC-46E2-9270-A70B16FA7FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82B85105-44AC-46E2-9270-A70B16FA7FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82B85105-44AC-46E2-9270-A70B16FA7FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE72CC48-12D8-49C7-AFB4-AE11DEB5FD30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE72CC48-12D8-49C7-AFB4-AE11DEB5FD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE72CC48-12D8-49C7-AFB4-AE11DEB5FD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE72CC48-12D8-49C7-AFB4-AE11DEB5FD30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2177A46-332F-49C0-8C92-DE2B2AB0C396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2177A46-332F-49C0-8C92-DE2B2AB0C396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2177A46-332F-49C0-8C92-DE2B2AB0C396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2177A46-332F-49C0-8C92-DE2B2AB0C396}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
