@@ -33,9 +33,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="Selenium.WebDriverBackedSelenium">
-      <HintPath>D:\Program Files (x86)\visualstuio\selenium-dotnet-2.45.0\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +43,11 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThoughtWorks.Selenium.Core">
-      <HintPath>D:\Program Files (x86)\visualstuio\selenium-dotnet-2.45.0\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
-    </Reference>
     <Reference Include="WebDriver">
-      <HintPath>D:\Program Files (x86)\visualstuio\selenium-dotnet-2.45.0\net40\WebDriver.dll</HintPath>
+      <HintPath>..\packages\Selenium.WebDriver.2.46.0\lib\net40\WebDriver.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver.Support">
-      <HintPath>D:\Program Files (x86)\visualstuio\selenium-dotnet-2.45.0\net40\WebDriver.Support.dll</HintPath>
+      <HintPath>..\packages\Selenium.Support.2.46.0\lib\net40\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +73,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
