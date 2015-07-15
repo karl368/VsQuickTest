@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VsQuickTest.chap11_unittest.main
+namespace VsQuickTest.basic.nunit.main
 {
     public class Subscription
     {

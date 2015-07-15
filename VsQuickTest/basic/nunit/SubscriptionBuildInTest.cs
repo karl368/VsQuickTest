@@ -1,15 +1,18 @@
-﻿using System;
+﻿/*
+ test by build test framework 15 Jul 2015
+ */
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using VsQuickTest.chap11_unittest.main;
+using VsQuickTest.basic.nunit.main;
 
-namespace VsQuickTestTest.chap11_unittest.test
+namespace VsQuickTest.basic.nunit.test
 {
     [TestClass]
-    public class SubscriptionTest
+    public class SubscriptionBuildInTest
     {
         [TestMethod]
         [TestCategory("Financial")]
-        public void CurrentStatus_NullPaidUpToDate_TemporaryStatus()
+        public void testByBuildInTestFramework()
         {
             Subscription s = new Subscription();
             s.PaidUpTo = null;
@@ -18,7 +21,7 @@ namespace VsQuickTestTest.chap11_unittest.test
             Assert.AreEqual(Subscription.Status.Temporary, actual, "Subscription status was not set correctly. ");
 
             // this case not yet completed
-            Assert.Inconclusive();
+            //Assert.Inconclusive();
 
         }
 

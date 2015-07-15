@@ -48,6 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -61,10 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="basic\function\HandleMessage.cs" />
+    <Compile Include="basic\nunit\SubscriptionBuildInTest.cs" />
+    <Compile Include="basic\nunit\SubscriptionTest.cs" />
     <Compile Include="basic\web\WebClientUtil.cs" />
     <Compile Include="chap10-diagrams\manualDiagram\Car.cs" />
     <Compile Include="chap10-diagrams\manualDiagram\Driver.cs" />
-    <Compile Include="chap11-unittest\Subscription.cs" />
+    <Compile Include="basic\nunit\Subscription.cs" />
     <Compile Include="chap28-dataset\cases.cs">
       <DependentUpon>cases.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -143,6 +149,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="basic\nunit\readme.txt" />
     <Content Include="chap10-diagrams\manualDiagram\readme.txt" />
     <Content Include="chap14-template\ClassFeatures.txt">
       <DependentUpon>ClassFeatures.tt</DependentUpon>
@@ -179,6 +186,7 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

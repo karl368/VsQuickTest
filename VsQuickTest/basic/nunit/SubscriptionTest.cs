@@ -1,18 +1,21 @@
-﻿using System;
+﻿/*
+ use unit to do the test 15 Jul 2015
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using VsQuickTest.chap11_unittest.main;
+using VsQuickTest.basic.nunit.main;
 
-namespace VsQuickTest_Nunit
+namespace VsQuickTest.basic.unit
 {
     [TestFixture]
     public class SubScriptionTest
     {
         [Test]
-        public void CurrentStatus_NullPaidUpToDate_TemporaryStatus_NUnit()
+        public void testByNunit()
         {
             Subscription s = new Subscription();
             s.PaidUpTo = null;
