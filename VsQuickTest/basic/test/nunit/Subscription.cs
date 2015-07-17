@@ -1,10 +1,16 @@
-﻿using System;
+﻿/*
+ * History
+ * Date        Ver Author        Change Description
+ * ----------- --- ------------- ----------------------------------------
+ * 15 Jul 2015 001 Karl          the class under test
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VsQuickTest.basic.nunit.main
+namespace VsQuickTest.basic.language.test.nunit.main
 {
     public class Subscription
     {

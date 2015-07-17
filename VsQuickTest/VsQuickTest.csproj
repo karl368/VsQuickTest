@@ -64,35 +64,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="basic\function\HandleMessage.cs" />
-    <Compile Include="basic\nunit\SubscriptionBuildInTest.cs" />
-    <Compile Include="basic\nunit\SubscriptionTest.cs" />
+    <Compile Include="basic\language\function\HandleMessage.cs" />
+    <Compile Include="basic\test\nunit\SubscriptionBuildInTest.cs" />
+    <Compile Include="basic\test\nunit\SubscriptionTest.cs" />
     <Compile Include="basic\web\WebClientUtil.cs" />
-    <Compile Include="chap10-diagrams\manualDiagram\Car.cs" />
-    <Compile Include="chap10-diagrams\manualDiagram\Driver.cs" />
-    <Compile Include="basic\nunit\Subscription.cs" />
-    <Compile Include="chap28-dataset\cases.cs">
-      <DependentUpon>cases.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="chap28-dataset\cases.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>cases.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="chap28-dataset\CasesWindow.cs">
+    <Compile Include="design\diagrams\manualDiagram\Car.cs" />
+    <Compile Include="design\diagrams\manualDiagram\Driver.cs" />
+    <Compile Include="basic\test\nunit\Subscription.cs" />
+    <Compile Include="basic\linq\LinqForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="chap28-dataset\CasesWindow.Designer.cs">
-      <DependentUpon>CasesWindow.cs</DependentUpon>
-    </Compile>
-    <Compile Include="chap29-linq\LinqForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="chap29-linq\LinqForm.Designer.cs">
+    <Compile Include="basic\linq\LinqForm.Designer.cs">
       <DependentUpon>LinqForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="chap29-linq\linqToSql.designer.cs">
+    <Compile Include="basic\linq\linqToSql.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>linqToSql.dbml</DependentUpon>
@@ -113,32 +98,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="chap10-diagrams\manualDiagram\QuickDiagram.cd" />
-    <None Include="chap10-diagrams\QuickForm.cd" />
-    <None Include="chap14-template\ErrorOne.tt">
+    <None Include="design\diagrams\manualDiagram\QuickDiagram.cd" />
+    <None Include="design\diagrams\QuickForm.cd" />
+    <None Include="tools\template\ErrorOne.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ErrorOne.txt</LastGenOutput>
     </None>
-    <None Include="chap14-template\ClassFeatures.tt">
+    <None Include="tools\template\ClassFeatures.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ClassFeatures.txt</LastGenOutput>
     </None>
-    <None Include="chap14-template\ForStatement.tt">
+    <None Include="tools\template\ForStatement.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ForStatement.txt</LastGenOutput>
     </None>
-    <None Include="chap28-dataset\cases.xsc">
-      <DependentUpon>cases.xsd</DependentUpon>
-    </None>
-    <None Include="chap28-dataset\cases.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>cases.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="chap28-dataset\cases.xss">
-      <DependentUpon>cases.xsd</DependentUpon>
-    </None>
-    <None Include="chap29-linq\linqToSql.dbml">
+    <None Include="basic\linq\linqToSql.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>linqToSql.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
@@ -150,19 +124,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="basic\nunit\readme.txt" />
-    <Content Include="chap10-diagrams\manualDiagram\readme.txt" />
-    <Content Include="chap14-template\ClassFeatures.txt">
+    <Content Include="basic\test\nunit\readme.txt" />
+    <Content Include="design\diagrams\manualDiagram\readme.txt" />
+    <Content Include="tools\template\ClassFeatures.txt">
       <DependentUpon>ClassFeatures.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Content>
-    <Content Include="chap14-template\ErrorOne.txt">
+    <Content Include="tools\template\ErrorOne.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ErrorOne.tt</DependentUpon>
     </Content>
-    <Content Include="chap14-template\ForStatement.txt">
+    <Content Include="tools\template\ForStatement.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ForStatement.tt</DependentUpon>
@@ -171,15 +145,12 @@
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="chap28-dataset\cases.resx">
-      <DependentUpon>cases.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="chap28-dataset\CasesWindow.resx">
-      <DependentUpon>CasesWindow.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="chap29-linq\linqToSql.dbml.layout">
+    <None Include="basic\linq\linqToSql.dbml.layout">
       <DependentUpon>linqToSql.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="basic\linq\LinqForm.resx">
+      <DependentUpon>LinqForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuickForm.resx">
       <DependentUpon>QuickForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,7 +177,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="db\dataset\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

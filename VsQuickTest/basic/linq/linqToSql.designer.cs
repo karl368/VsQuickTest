@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VsQuickTest.chap29_linq
+namespace VsQuickTest.basic.linq
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;

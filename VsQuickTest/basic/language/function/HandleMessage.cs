@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VsQuickTest.basic.function
+namespace VsQuickTest.basic.language.function
 {
     class HandleMessage
     {

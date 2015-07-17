@@ -7,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using VsQuickTest.basic.function;
-using VsQuickTest.basic.web;
-using VsQuickTest.chap28_dataset;
+using VsQuickTest.basic.language.function;
+using VsQuickTest.basic.language.web;
 
 namespace VsQuickTest
 {
@@ -54,11 +53,6 @@ namespace VsQuickTest
             testLinqStatement();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            new CasesWindow().ShowDialog();
-        }
-
         private void defineAndCallFunc_Click(object sender, EventArgs e)
         {
             new HandleMessage("where?").Handle();
@@ -68,6 +62,11 @@ namespace VsQuickTest
         {
             string s = WebClientUtil.getUriSource("http://www.baidu.com");
             MessageBox.Show(s);
+        }
+
+        private void viewTableData_Click(object sender, EventArgs e)
+        {
+
         }
 
         

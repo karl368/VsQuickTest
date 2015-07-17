@@ -1,11 +1,14 @@
 ﻿/*
- test by build test framework 15 Jul 2015
+ * History
+ * Date        Ver Author        Change Description
+ * ----------- --- ------------- ----------------------------------------
+ * 15 Jul 2015 001 Karl          test by build test framework 15 Jul 2015
  */
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using VsQuickTest.basic.nunit.main;
+using VsQuickTest.basic.language.test.nunit.main;
 
-namespace VsQuickTest.basic.nunit.test
+namespace VsQuickTest.basic.language.nunit.test
 {
     [TestClass]
     public class SubscriptionBuildInTest

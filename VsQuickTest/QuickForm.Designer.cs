@@ -30,7 +30,6 @@
         {
             this.helloCSharp = new System.Windows.Forms.Button();
             this.linqStatement = new System.Windows.Forms.Button();
-            this.viewTableData = new System.Windows.Forms.Button();
             this.defineAndCallFunc = new System.Windows.Forms.Button();
             this.xmlToSql = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -55,19 +54,9 @@
             this.linqStatement.UseVisualStyleBackColor = true;
             this.linqStatement.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // viewTableData
-            // 
-            this.viewTableData.Location = new System.Drawing.Point(12, 108);
-            this.viewTableData.Name = "viewTableData";
-            this.viewTableData.Size = new System.Drawing.Size(128, 28);
-            this.viewTableData.TabIndex = 2;
-            this.viewTableData.Text = "View Table Data";
-            this.viewTableData.UseVisualStyleBackColor = true;
-            this.viewTableData.Click += new System.EventHandler(this.button3_Click);
-            // 
             // defineAndCallFunc
             // 
-            this.defineAndCallFunc.Location = new System.Drawing.Point(12, 156);
+            this.defineAndCallFunc.Location = new System.Drawing.Point(12, 115);
             this.defineAndCallFunc.Name = "defineAndCallFunc";
             this.defineAndCallFunc.Size = new System.Drawing.Size(128, 28);
             this.defineAndCallFunc.TabIndex = 3;
@@ -77,7 +66,7 @@
             // 
             // xmlToSql
             // 
-            this.xmlToSql.Location = new System.Drawing.Point(12, 206);
+            this.xmlToSql.Location = new System.Drawing.Point(12, 166);
             this.xmlToSql.Name = "xmlToSql";
             this.xmlToSql.Size = new System.Drawing.Size(128, 28);
             this.xmlToSql.TabIndex = 4;
@@ -92,7 +81,6 @@
             this.ClientSize = new System.Drawing.Size(537, 382);
             this.Controls.Add(this.xmlToSql);
             this.Controls.Add(this.defineAndCallFunc);
-            this.Controls.Add(this.viewTableData);
             this.Controls.Add(this.linqStatement);
             this.Controls.Add(this.helloCSharp);
             this.Name = "QuickForm";
@@ -105,7 +93,6 @@
 
         private System.Windows.Forms.Button helloCSharp;
         private System.Windows.Forms.Button linqStatement;
-        private System.Windows.Forms.Button viewTableData;
         private System.Windows.Forms.Button defineAndCallFunc;
         private System.Windows.Forms.Button xmlToSql;
     }

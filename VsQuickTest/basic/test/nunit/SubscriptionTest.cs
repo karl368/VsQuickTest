@@ -1,5 +1,8 @@
 ﻿/*
- use unit to do the test 15 Jul 2015
+ * History
+ * Date        Ver Author        Change Description
+ * ----------- --- ------------- ----------------------------------------
+ * 15 Jul 2015 001 Karl          use unit to do the test 15 Jul 2015
  */
 using System;
 using System.Collections.Generic;
@@ -7,9 +10,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using VsQuickTest.basic.nunit.main;
+using VsQuickTest.basic.language.test.nunit.main;
 
-namespace VsQuickTest.basic.unit
+namespace VsQuickTest.basic.language.unit
 {
     [TestFixture]
     public class SubScriptionTest
