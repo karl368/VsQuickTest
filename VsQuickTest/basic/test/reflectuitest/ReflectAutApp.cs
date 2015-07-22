@@ -4,10 +4,12 @@
  * Date        Ver Author        Change Description
  * ----------- --- ------------- ----------------------------------------
  * 21 Jul 2015 001 karl          Run UI test by reflection
- */	
+ * 22 Jul 2015 002 karl          add method to access property
+ */
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -24,8 +26,8 @@ namespace VsQuickTest.basic.test.reflectuitest.ReflectAutApp
         {
             Form form = LaunchApp("E:\\github\\karl368\\VsQuickTest\\AUT\\bin\\Debug\\AUT.exe", 
                "AUT.Form1", 3000);
-
-            
+            Point p = (Point)GetFormPropertyValue(form, "Location");
+            Console.WriteLine("Form location = " + p.X + " " + p.Y);
         }
 
         private static Form LaunchApp(String path, String formName, int timeout)
@@ -53,6 +55,26 @@ namespace VsQuickTest.basic.test.reflectuitest.ReflectAutApp
             return theForm;
             
         }
+
+        delegate object GetFormPropertyValueHandler(Form f, string propertyName);
+
+        static object GetFormPropertyValue(Form f, string propertyName)
+        {
+            if (f.InvokeRequired)
+            {
+                Delegate d = new GetFormPropertyValueHandler(GetFormPropertyValue);
+                object[] o = new object[] { f, propertyName };
+                object iResult = f.Invoke(d, o);
+                return iResult;
+            }
+            else
+            {
+                Type t = f.GetType();
+                PropertyInfo pi = t.GetProperty(propertyName);
+                object gResult = pi.GetValue(f, null);
+                return gResult;
+            }
+        }
     }
 
     class AppState
@@ -67,4 +89,5 @@ namespace VsQuickTest.basic.test.reflectuitest.ReflectAutApp
             Application.Run(formToRun);
         }
     }
+
 }
