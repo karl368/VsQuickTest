@@ -67,6 +67,7 @@
     <Compile Include="basic\language\function\HandleMessage.cs" />
     <Compile Include="basic\test\nunit\SubscriptionBuildInTest.cs" />
     <Compile Include="basic\test\nunit\SubscriptionTest.cs" />
+    <Compile Include="basic\test\reflectuitest\ReflectAutApp.cs" />
     <Compile Include="basic\web\WebClientUtil.cs" />
     <Compile Include="design\diagrams\manualDiagram\Car.cs" />
     <Compile Include="design\diagrams\manualDiagram\Driver.cs" />
@@ -125,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="basic\test\nunit\readme.txt" />
+    <Content Include="basic\test\reflectuitest\readme.txt" />
     <Content Include="design\diagrams\manualDiagram\readme.txt" />
     <Content Include="tools\template\ClassFeatures.txt">
       <DependentUpon>ClassFeatures.tt</DependentUpon>

@@ -1,4 +1,4 @@
-﻿namespace VsQuickTest.AUT
+﻿namespace AUT
 {
     partial class Form1
     {
