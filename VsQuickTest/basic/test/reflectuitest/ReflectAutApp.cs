@@ -24,10 +24,12 @@ namespace VsQuickTest.basic.test.reflectuitest.ReflectAutApp
         [Test]
         public void evenTest() 
         {
-            Form form = LaunchApp("E:\\github\\karl368\\VsQuickTest\\AUT\\bin\\Debug\\AUT.exe", 
+            Form form = LaunchApp("..\\..\\..\\AUT\\bin\\Debug\\AUT.exe", 
                "AUT.Form1", 3000);
             Point p = (Point)GetFormPropertyValue(form, "Location");
-            Console.WriteLine("Form location = " + p.X + " " + p.Y);
+            String locationMsg = "Form location = " + p.X + " " + p.Y;
+            Console.WriteLine(locationMsg);
+            MessageBox.Show(locationMsg, "Form location");
         }
 
         private static Form LaunchApp(String path, String formName, int timeout)

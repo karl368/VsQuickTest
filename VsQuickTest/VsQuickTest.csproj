@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="basic\language\function\HandleMessage.cs" />
+    <Compile Include="basic\language\path\PathTest.cs" />
     <Compile Include="basic\test\nunit\SubscriptionBuildInTest.cs" />
     <Compile Include="basic\test\nunit\SubscriptionTest.cs" />
     <Compile Include="basic\test\reflectuitest\ReflectAutApp.cs" />
