@@ -47,7 +47,9 @@ namespace VsQuickTest.basic.test.reflectuitest.ReflectAutApp
                 thread.SetApartmentState(ApartmentState.STA);
                 thread.IsBackground = true;
                 thread.Start();
-                //Thread.Sleep(timeout);
+
+                // if not wait here, the window will go disappear in a very short time period
+                Thread.Sleep(timeout);
                 Console.WriteLine("\nForm launched");
             }
             catch (Exception ex)
